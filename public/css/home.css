@@ -45,7 +45,7 @@ a.nav:visited {
 }
 
 a.nav:hover {
-    color: #cfd2d6;
+    color: #a1b2ce;
     text-shadow: 1px 1px 5px black;
 }
 
@@ -79,4 +79,9 @@ h1.m-title {
 hr {
   width: 222%;
   border: 0.5px #cfd2d6 ridge;
+}
+
+h2 {
+  font-size: 20px;
+  color: #6887ba;
 }
