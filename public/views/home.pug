@@ -18,3 +18,10 @@ html
                 div(class="reviews")
                 h1 Liste de toutes les reviews
                 div(class="get-reviews")
+                  for review in reviews
+                    article
+                      h1 #{review.title}
+                      h2 #{review.game}
+                      p #{review.review}
+                hr
+                    

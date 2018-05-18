@@ -38,28 +38,14 @@ app.get('/', (req, res) => {
         });
 });
 
-app.post('/', (req, res) => {
-    const { title, game, author, review, like, dislike } = req.body;
-    Review
-        .then(() => Review.create({ title, game, author, review, like, dislike }));
- });
 
- app.get('/', (req, res) => {
-     Post
-         .findAll({ include: [AddReview] })
-         .then(posts => res.render('home', { posts }));
- });
-
- app.post('/api/post', (req, res) => {
+ app.post('/api/post/addreview', (req, res) => {
      const { title, game, author, review, like, dislike } = req.body;
-     Post
-         .create({ title, game, author, review, like, dislike })
+     Review
+         .sync()
+         .then(() => Review.create({ title, game, author, review, like, dislike }))
          .then(() => res.redirect('/'))
  });
 
- app.post('/api/post/:postID/addreview', (req, res) => {
-     AddReview
-         .create({ type: 'add', postId: req.params.reviewID })
-         .then(() => res.redirect('/'));
- });
+
 app.listen(3000);
