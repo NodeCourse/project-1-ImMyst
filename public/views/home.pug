@@ -1,0 +1,28 @@
+html
+  head
+    title Gaming Club - Home
+    link(rel="stylesheet", href="/css/home.css")
+    link(href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet")
+  body
+    main
+        nav 
+          ul(class="navbar")
+            li 
+              a(class="nav" href="/") Home
+            li 
+              a(class="nav" href="/add-review") Add a Review
+        img(class="main-img" src="/img/main.jpg")
+        div(class="container")
+        div(class="title")
+              h1(class="m-title") Gaming Club
+                
+                div(class="reviews")
+                h1 Liste de toutes les reviews
+                div(class="get-reviews")
+                  for review in reviews
+                    article
+                      h1 #{review.title}
+                      h2 #{review.game}
+                      p #{review.review}
+                hr
+                    

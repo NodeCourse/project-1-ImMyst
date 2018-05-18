@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Rajdhani;
+  margin: -8px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #ededed;
+}
+
+nav {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 35px;
+  padding : 0 0.5em;
+  line-height: 40px;
+}
+
+.navbar {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.nav:link {
+  color: white;
+  text-shadow: 3px 3px 8px #6887ba
+}
+
+a.nav:visited {
+    color: white;
+    text-shadow: 3px 3px 8px #6887ba
+
+}
+
+a.nav:hover {
+    color: #a1b2ce;
+    text-shadow: 3px 3px 8px #6887ba
+}
+
+a.nav:active {
+    color: white;
+    text-shadow: 3px 3px 8px #6887ba
+}
+
+div.title {
+  position: absolute;
+  top: 300px;
+  left: 57px;
+}
+
+h1.m-title {
+  font-size: 125px;
+  text-shadow: 3px 3px 8px #6887ba
+}
+
+.container {
+  padding-top: 150px;
+  padding-left: 60px;
+  padding-right: 100px;
+}
+
+.main-img {
+  margin-top: 30px;
+  width: 100%;
+  max-height: 500px;
+}
+
+.reviews {
+  position: absolute;
+  margin-top: 50px;
+}
+
+hr {
+  width: 222%;
+  border: 0.5px #cfd2d6 ridge;
+}
+
+h2 {
+  font-size: 20px;
+  color: #6887ba;
+}
