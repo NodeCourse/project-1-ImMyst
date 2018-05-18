@@ -13,29 +13,29 @@ html
             a(class="nav" href="/add-review") Add a Review
       div(class="container")
         article
-          form(action="/api/post/" + review.id + "addreview", method="post")
+          form(method="post", action="/api/post/" + post.id + "/addreview")
             h1 Choisir votre jeu
               br
               br
               label(for="game")
-              input(type="text" id="game" name="review_game")
+              input(type="text", id="game", name="review_game")
               
             h1 Ajouter un titre
               br
               br
               label(for="title" )
-              input(type="text" id="game" name="review_title")
+              input(type="text", id="title", name="review_title")
               br
             h1 Votre nom
               br
               br
               label(for="author")
-              input(type="text" id="game" name="review_author")
+              input(type="text", id="author", name="review_author")
               
             h1 Ecrivez votre review
               br
               br
               label(for="review")
-              input(type="text" id="game" name="review_review")
+              input(type="text", id="review", name="review_review")
             button(type="submit") Soumettre
             

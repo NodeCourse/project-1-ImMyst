@@ -57,10 +57,9 @@ app.post('/', (req, res) => {
          .then(() => res.redirect('/'))
  });
 
- app.post('/api/post/:reviewID/addreview', (req, res) => {
+ app.post('/api/post/:postID/addreview', (req, res) => {
      AddReview
          .create({ type: 'add', postId: req.params.reviewID })
          .then(() => res.redirect('/'));
  });
-
 app.listen(3000);

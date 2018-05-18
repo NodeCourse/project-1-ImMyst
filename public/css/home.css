@@ -60,7 +60,7 @@ div.title {
   left: 57px;
 }
 
-h1 {
+h1.m-title {
   font-size: 125px;
   text-shadow: 1px 1px 5px black
 }
@@ -69,4 +69,14 @@ h1 {
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 100px;
+}
+
+.reviews {
+  position: absolute;
+  top: 350px;
+}
+
+hr {
+  width: 222%;
+  border: 0.5px #cfd2d6 ridge;
 }
