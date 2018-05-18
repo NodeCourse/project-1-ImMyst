@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Rajdhani;
+  margin: -8px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #ededed;
+}
+
+nav {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 35px;
+  padding : 0 0.5em;
+  line-height: 40px;
+}
+
+.navbar {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.nav:link {
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+a.nav:visited {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+
+}
+
+a.nav:hover {
+    color: #cfd2d6;
+    text-shadow: 1px 1px 5px black;
+}
+
+a.nav:active {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.container {
+  padding-top: 100px;
+  padding-left: 60px;
+  padding-right: 100px;
+}
